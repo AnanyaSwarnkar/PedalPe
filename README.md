@@ -17,4 +17,4 @@ It is a user friendly website.
 Join this revolutionary movement in reducing the carbon footprint, Congestion and pollution in the surroundings.
 We hope that you enjoy every bit of your ride. 
                 
-# Screenshots for better demonstration of the Project
+# SCREENSHOTS FOR BETTER DEMONSTRATION OF THE PROJECT
