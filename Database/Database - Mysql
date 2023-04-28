@@ -1,0 +1,178 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Apr 26, 2023 at 04:46 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `pp`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cycle_info`
+--
+
+CREATE TABLE `cycle_info` (
+  `Cycle_Id` varchar(8) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Start_Time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `cycle_info`
+--
+
+INSERT INTO `cycle_info` (`Cycle_Id`, `Email`, `Start_Time`) VALUES
+('123', 'jk@gmail.com', '2023-04-21 16:15:16'),
+('8765', 'khushi@gmail.com', '2023-04-25 17:25:34'),
+('88', 'jj@gmail.com', '2023-04-12 05:19:15'),
+('df123', 'it@gmail.com', '2023-04-24 11:50:48'),
+('gh123', 'bn@gmail.com', '2023-04-12 04:03:22'),
+('jk789', 'op@gmail.com', '2023-04-24 16:36:16'),
+('op098', 'ip@gmail.com', '2023-04-11 19:35:37'),
+('op123', 'op@gmail.com', '2023-04-11 18:14:05'),
+('rt123', 'no@gmail.com', '2023-04-21 16:17:31'),
+('ru122', 'oppo@gmail.com', '2023-04-11 18:34:08'),
+('tf123', 'is@gmail.com', '2023-04-11 20:42:18'),
+('tf124', 'is@gmail.com', '2023-04-11 20:42:18'),
+('tt', 'gt@gmail.com', '2023-04-12 05:11:03'),
+('ty123', 'ask@gmail.com', '2023-04-11 17:58:01'),
+('ty1234', 'ana@gmail.com', '2023-04-11 18:07:57'),
+('ty126', 'is@gmail.com', '2023-04-11 20:45:31'),
+('up1234', 'ask@gmail.com', '2023-04-11 21:14:34'),
+('uy76', 'aaloo@gmail.com', '2023-04-25 17:07:56'),
+('vv123', 'loo@gmail.com', '2023-04-24 10:59:32'),
+('yes123', 'gogo@gmail.com', '2023-04-11 19:33:16'),
+('yu24', 'is@gmail.com', '2023-04-11 20:42:18'),
+('yu890', 'gh@gmail.com', '2023-04-11 18:10:44'),
+('yuohoh', 'fi@gmail.com', '2023-04-25 10:39:51'),
+('yup123', 'hi@gmail.com', '2023-04-11 20:20:47'),
+('yup1234', 'fi@gmail.com', '2023-04-11 20:26:35'),
+('yy', 'nn@gmail.com', '2023-04-12 05:31:33');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_info`
+--
+
+CREATE TABLE `user_info` (
+  `Username` text NOT NULL,
+  `Email` varchar(40) NOT NULL,
+  `Password` varchar(10) NOT NULL,
+  `user_datetime` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `status1` int(2) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user_info`
+--
+
+INSERT INTO `user_info` (`Username`, `Email`, `Password`, `user_datetime`, `status1`) VALUES
+('', '', '', '2023-04-11 17:30:41', 0),
+('aaloo', 'aaloo@gmail.com', 'Aaloo@321', '2023-04-25 17:07:56', 1),
+('Abhilasha', 'abhi@gmail.com', 'Hii', '2023-03-24 20:54:45', 0),
+('abhi', 'abhilasha34@gmail.com', 'abhi43', '2023-03-25 08:24:12', 0),
+('Aditi', 'aditi@gmail.com', 'Aditi@123', '2023-04-25 17:46:20', 0),
+('', 'Aish@gmail.com', 'Aish', '2023-03-24 20:54:45', 0),
+('ana', 'ana@gmail.com', 'ana', '2023-03-25 08:35:43', 0),
+('Ananya', 'ananya@gmail.com', 'Hello', '2023-03-24 20:54:45', 0),
+('Yup', 'ananyaswarnkar1902@gmail.com', 'mkjbjkb', '2023-04-11 14:10:05', 0),
+('Ask', 'Ask@gmail.com', 'Ask', '2023-04-11 21:14:34', 1),
+('  ', 'avni@gmail.com', 'Avni@123', '2023-04-25 17:56:20', 0),
+('bn', 'bn@gmail.com', 'bn', '2023-04-12 04:03:22', 1),
+('btech', 'btech@gmail.com', 'btech', '2023-03-25 11:39:21', 0),
+('computer', 'computer@gmail.com', 'Computer', '2023-04-25 16:56:36', 0),
+('Data', 'Data@gmail.com', 'DataAish', '2023-03-24 20:54:45', 0),
+('fi', 'fi@gmail.com', 'fi', '2023-04-25 10:39:51', 1),
+('gh', 'gh@gmail.com', 'gh', '2023-04-11 10:44:02', 0),
+('gogo', 'gogo@gmail.com', 'gogo', '2023-03-25 08:52:02', 0),
+('gt', 'gt@gmail.com', 'gt', '2023-04-12 05:11:03', 1),
+('hi', 'hi@gmail.com', 'hi', '2023-04-11 20:20:27', 0),
+('hyhy', 'hyhy@gmail.com', 'hy', '2023-03-25 09:16:50', 0),
+('ip', 'ip@gmail.com', 'ip', '2023-04-11 19:35:03', 0),
+('is', 'is@gmail.com', 'is', '2023-03-25 08:36:07', 0),
+('it', 'it@gmail.com', 'it', '2023-04-24 11:50:48', 1),
+('jj', 'jj@gmail.com', 'jj', '2023-04-12 05:19:15', 1),
+('jk', 'jk@gmail.com', 'jk', '2023-04-21 16:15:16', 1),
+('jo', 'jo@gmail.com', 'jo', '2023-03-25 09:05:44', 0),
+('kaka', 'kaka@gmail.com', 'Kaka@321', '2023-04-25 17:05:44', 0),
+('khushi', 'khushi@gmail.com', 'khushi', '2023-04-25 17:25:34', 1),
+('abhi', 'lasha34@gmail.com', 'abhi', '2023-03-25 08:32:05', 0),
+('Lasha', 'Lasha@gmail.com', 'Lasha', '2023-03-24 20:54:45', 0),
+('li', 'li@gmail.com', 'li', '2023-03-25 09:05:07', 0),
+('ll', 'll@gmail.com', 'Llllll12', '2023-04-24 16:42:53', 0),
+('loo', 'loo@gmail.com', 'loo', '2023-04-24 10:59:32', 1),
+('mm', 'mf@gmail.com', 'QQQ@@@12', '2023-04-24 17:19:33', 0),
+('mm', 'mm@gmail.com', 'mm', '2023-04-12 05:57:48', 0),
+('kiwi', 'nahi@gmail.com', 'yes', '2023-03-25 09:52:52', 0),
+('nn', 'nn@gmail.com', 'nn', '2023-04-12 05:31:33', 1),
+('no', 'no@gmail.com', 'no', '2023-04-21 16:17:31', 1),
+('ok', 'ok@gmail.com', 'ok', '2023-04-11 08:34:07', 0),
+('op', 'op@gmail.com', 'op', '2023-04-24 16:36:16', 1),
+('oppo', 'oppo@gmail.com', 'oppo', '2023-03-24 20:54:45', 0),
+('pi', 'pi@gmail.com', 'pi', '2023-03-25 09:02:27', 0),
+('Pranju', 'pranju@gmail.com', 'Pranju@123', '2023-04-25 17:45:04', 0),
+('Pro', 'Pro@gmail.com', 'Pro', '2023-03-24 20:54:45', 0),
+('Qwerty', 'Qwerty@gmail.com', 'qwerty', '2023-03-24 20:54:45', 0),
+('Rain', 'Rain@gmail.com', 'Rain', '2023-03-25 02:55:37', 0),
+('Ai', 'rishu@gmail.com', 'Rishu@123', '2023-04-25 18:04:18', 0),
+('Science', 'science@gmail.com', 'Science@12', '2023-04-25 17:02:25', 0),
+('k o', 'sd@gmail.com', 'SD@1235s', '2023-04-24 17:24:22', 0),
+('swaranshi', 'swaranshi@gmail.com', 'Sw@ra077', '2023-04-25 16:48:54', 0),
+('There', 'There@gmail.com', 'There', '2023-03-24 20:54:45', 0),
+('toy', 'toy@gmail.com', 'toy', '2023-03-24 20:54:45', 0),
+('ty', 'ty@gmail.com', 'ty', '2023-03-25 09:11:44', 0),
+('uouo', 'uouo@gmail.com', 'uouo', '2023-03-25 08:53:20', 0),
+('UP', 'UP@gmail.com', 'UP', '2023-04-11 10:37:20', 0),
+('vb', 'vb@gmail.com', 'Bv@gmail', '2023-04-24 17:17:47', 0),
+('Well', 'Well', 'Well', '2023-03-24 20:54:45', 0),
+('YES', 'YES@GMAIL.COM', 'YES', '2023-03-24 20:54:45', 0),
+('YOAish@gmail.com', 'YO@gmail.com', 'YoAish', '2023-03-24 20:54:45', 0),
+('Yup', 'Yup@gmail.com', 'yup', '2023-03-24 20:54:45', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `cycle_info`
+--
+ALTER TABLE `cycle_info`
+  ADD PRIMARY KEY (`Cycle_Id`);
+
+--
+-- Indexes for table `user_info`
+--
+ALTER TABLE `user_info`
+  ADD PRIMARY KEY (`Email`);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `cycle_info`
+--
+ALTER TABLE `cycle_info`
+  ADD CONSTRAINT `Email` FOREIGN KEY (`Email`) REFERENCES `user_info` (`Email`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
