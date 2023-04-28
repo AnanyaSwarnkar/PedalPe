@@ -1,0 +1,105 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: linear-gradient(105.59deg, rgba(99, 58, 151, 0.9) 34.3%, rgba(76, 135, 198, 0.9) 91.59%);
+    background-repeat: no-repeat;
+    height: 98vh;
+}
+.bluecolor{
+    color: #007AFF;
+}
+.navbar ul li{
+    float:left; 
+    list-style: none;
+    margin: 3vw;
+    color: white;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+}
+.navbar{
+    float: right;
+}
+.logo{
+    margin-top: 55px;
+    float:left;
+    color: #007BFf;
+    font-size: 1.5rem;
+    font-weight:600;
+}
+.logo p{
+    font-size: 7.9px;
+    color:white;
+}
+.logo a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.pedal{
+    color:white;
+}
+.profile{
+    border-radius: 50%;
+    margin-top: -10px;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+}
+.left{
+    width: 50%;
+    float: left;
+}
+.left img{
+    position: relative;
+    left: -100px;
+    width: 38vw;
+}
+.right{
+    width: 50%;
+    margin: auto;
+}
+.balance{
+    position: relative;
+    right: -170px;
+    top: 100px;
+    width: 22vw;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.column{
+    float: left;
+}
+.btn-start{
+    padding: 0px 28px;
+    border-radius: 50px;
+    border-width: 0px;
+    background-color: black;
+    width: 15vw;
+    height: 10vh;
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+.fa-arrow-right{
+  margin: auto;
+  margin-right: 0px;
+}

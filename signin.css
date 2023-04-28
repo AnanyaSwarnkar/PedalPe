@@ -1,0 +1,98 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(105.59deg, rgba(99, 58, 151, 0.9) 34.3%, rgba(76, 135, 198, 0.9) 91.59%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo {
+    margin-top: 55px;
+    margin-left: 10%;
+    float: left;
+    color: #007BFf;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo p {
+    font-size: 7.9px;
+    color: white;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pedal {
+    color: white;
+}
+
+.signinbox {
+    width: 350px;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    padding: 50px;
+    box-sizing: border-box;
+    color: white;
+    background: rgba(217, 217, 217, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.signinbox h2 {
+    font-size: 1.2rem;
+}
+
+.signinbox p {
+    font-size: 0.8rem;
+}
+
+.center {
+    position: absolute;
+    top: 95vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #b9b9b9;
+    font-size: 0.9rem;
+}
+
+.center a {
+    text-decoration: none;
+    color: #00B2FF;
+}
+
+input[type=text],
+input[type=password] {
+    padding: 15px 10px;
+    width: 120%;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 16px;
+    background: transparent;
+}
+
+input[type=submit] {
+    padding: 15px 10px;
+    width: 132%;
+    border-radius: 15px;
+    border: 0px;
+    margin-top: 24px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=password]::placeholder,
+input[type=text]::placeholder {
+    color: white
+}

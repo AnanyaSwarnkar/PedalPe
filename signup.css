@@ -1,0 +1,125 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(105.59deg, rgba(99, 58, 151, 0.9) 34.3%, rgba(76, 135, 198, 0.9) 91.59%);
+    background-repeat: no-repeat;
+    height: 98vh;
+}
+
+.bluecolor {
+    color: #007AFF;
+}
+
+.navbar ul li {
+    float: left;
+    list-style: none;
+    margin: 3vw;
+    color: white;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    float: right;
+}
+
+.logo {
+    margin-top: 55px;
+    float: left;
+    color: #007BFf;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo p {
+    font-size: 7.9px;
+    color: white;
+}
+
+nav {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.pedal {
+    color: white;
+}
+
+.column {
+    float: left;
+}
+
+.left,
+.right {
+    width: 35%;
+}
+
+.login {
+    margin-left: 5vw;
+    color: white;
+    width: 20vw;
+    margin-top: 10vh;
+}
+
+.login h1 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.login a {
+    text-decoration: none;
+    color: #00B2FF;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.left img {
+    margin-top: 20vh;
+    width: 30vw;
+    margin-left: -150px;
+}
+
+input[type=text],
+input[type=password] {
+    padding: 15px 10px;
+    width: 100%;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 16px;
+    background: transparent;
+}
+
+input[type=submit] {
+    padding: 15px 10px;
+    width: 100%;
+    border-radius: 15px;
+    border: 0px;
+    margin-top: 24px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=password]::placeholder,
+input[type=text]::placeholder {
+    color: white
+}
